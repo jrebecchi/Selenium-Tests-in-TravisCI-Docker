@@ -1,0 +1,33 @@
+sudo: required
+language: node_js
+node_js:
+  - 10
+dist: xenial
+
+before_script:
+  - sleep 2 # give Web server some time to bind to sockets, etc
+jobs:
+  include:
+    - stage: Deploying demo server & running tests
+      script: xvfb-run --server-args="-screen 0 1024x768x24" make test
+      script: npm run test
+
+before_install:
+  - npm install
+  - docker-compose build
+  - docker-compose up -d
+  - sleep 8
+  - curl -i http://localhost:39500
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost:39500 &
+after_script:
+  - docker-compose kill
+addons:
+  chrome: stable
+services:
+  - docker
+  - xvfb
+cache:
+   directories:
+     - node_modules
+env:
+  - PORT=39500
