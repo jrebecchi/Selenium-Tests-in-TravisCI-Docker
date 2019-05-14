@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/JohannC/Travis-CI-Selenium-Xvfb-E2E-Testing.svg?branch=master)](https://travis-ci.org/JohannC/Travis-CI-Selenium-Xvfb-E2E-Testing)
 
-## End-to-end test your Node.JS app with Travis-CI - with Xvfb & Docker
+## End-to-end test your Node.JS app with Travis-CI - using Xvfb & Docker
 
 This repo aims to give a very simple example of end-to-end tests performed on a Node.JS webapp, with a continuous integration service like Travis-CI.
 
