@@ -2,14 +2,14 @@
     "name": "travis-ci-selenium-test-integration",
     "devDependencies": {
         "jest": "^24.8.0",
-        "selenium-webdriver": "^4.0.0-alpha.4"
+        "selenium-webdriver": "^4.0.0-alpha.4",
+        "chromedriver": "^76.0.0"
     },
     "scripts": {
         "test": "jest",
         "start": "node src/app.js"
     },
     "dependencies": {
-        "chromedriver": "^76.0.0",
         "express": "^4.17.1"
     }
 }
