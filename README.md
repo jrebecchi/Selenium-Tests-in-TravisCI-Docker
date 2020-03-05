@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jrebecchi/Travis-CI-Selenium-Xvfb-E2E-Testing.svg?branch=master)](https://travis-ci.org/JohannC/Travis-CI-Selenium-Xvfb-E2E-Testing)
+[![Build Status](https://travis-ci.org/jrebecchi/Travis-CI-Selenium-Xvfb-E2E-Testing.svg?branch=master)](https://travis-ci.org/jrebecchi/Travis-CI-Selenium-Xvfb-E2E-Testing)
 
 ## End-to-end test your Node.JS app with Travis-CI - using Xvfb & Docker
 
